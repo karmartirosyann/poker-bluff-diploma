@@ -1,7 +1,6 @@
 # Պոկերում հակառակորդի կողմից կատարված քայլում բլեֆի առկայության գնահատում
 
 **Դիպլոմային աշխատանք (միջանկյալ արդյունքներ)**
-Կիրառական մաթեմատիկայի ֆակուլտետ, բակալավրիատ, 4-րդ կուրս
 
 ---
 
@@ -98,7 +97,7 @@ $$P(\text{բլեֆ} \mid \text{խաղադրույք}) = \frac{P(\text{խաղադ
 
 **Բլեֆի պիտակ՝** `is_bluff = 1`, եթե խաղադրույքը արվել է թույլ ձեռքով։
 
-### Կոդ՝ տվյալների գեներացիա (`src/simulation.py`)
+### Կոդ՝ տվյալների գեներացիա (`simulation.py`)
 
 ```python
 """Պոկերի river-փուլի պարզեցված սիմուլյացիա՝ բլեֆի տվյալներ ստանալու համար."""
@@ -172,7 +171,7 @@ $$P(\text{բլեֆ}) = \frac{1}{1 + e^{-(w_0 + w_1 \cdot b + w_2 \cdot \text{wet
 
 ## Գլուխ 4. Փորձերի արդյունքները
 
-### Կոդ՝ փորձի գործարկում (`src/run.py`)
+### Կոդ՝ փորձի գործարկում (`run.py`)
 
 ```python
 import numpy as np
@@ -229,9 +228,10 @@ print("Գործակիցներ:", dict(zip(X.columns, lr.coef_[0].round(3))))
 
 ---
 
-## Արդեն արված և հետագա աշխատանք
+## Կատարված և հետագա աշխատանքներ
 
-**Արդեն արված է**
+
+**Կատարված է**
 - [x] Թեմայի ուսումնասիրություն, տեսական մաս (բլեֆ, pot odds, Բայես)
 - [x] Տվյալների սիմուլյատոր
 - [x] Բազային մոդել և լոգիստիկ ռեգրեսիա
@@ -249,13 +249,11 @@ print("Գործակիցներ:", dict(zip(X.columns, lr.coef_[0].round(3))))
 
 ## Օգտագործված գրականություն
 
-1. Brown N., Sandholm T. *Superhuman AI for multiplayer poker* (Pluribus), Science, 2019։
-2. Brown N., Sandholm T. *Superhuman AI for heads-up no-limit poker: Libratus beats top professionals*, Science, 2018։
-3. Moravčík M. et al. *DeepStack: Expert-level artificial intelligence in heads-up no-limit poker*, Science, 2017։
-4. Chen B., Ankenman J. *The Mathematics of Poker*, ConJelCo, 2006։
-5. Pedregosa F. et al. *Scikit-learn: Machine Learning in Python*, JMLR, 2011։
+1. Brown N., Sandholm T. *Superhuman AI for heads-up no-limit poker: Libratus beats top professionals*, Science, 2018։
+2. Moravčík M. et al. *DeepStack: Expert-level artificial intelligence in heads-up no-limit poker*, Science, 2017։
+3. Chen B., Ankenman J. *The Mathematics of Poker*, ConJelCo, 2006։
+4. Pedregosa F. et al. *Scikit-learn: Machine Learning in Python*, JMLR, 2011։
 
-*(Աղբյուրները ներկայացված են ըստ հիշողության, հարկավոր է ստուգել հրատարակման տարիները և մանրամասները նախքան վերջնական տարբերակը)*
 
 ---
 
